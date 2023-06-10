@@ -66,3 +66,8 @@ while True:
         case _:
             print('Неверный ввод')
 
+
+
+
+
+

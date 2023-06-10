@@ -24,9 +24,8 @@ def delStudent():
         nums = findStudentsNums(n)
         if len(nums) > 1:
             print('В списке найдены несколько студентов с именем %s, их номера: %s' % (n, ', '.join(map(str, map(lambda x: x + 1, nums)))))
-            numToDelete = input(f'Введите номер студента с именем {n}, которого желаете удалить\n')
             try:
-                int(numToDelete)
+                numToDelete = int(input(f'Введите номер студента с именем {n}, которого желаете удалить\n'))
                 if numToDelete - 1 in nums:
                     students.pop(numToDelete - 1)
                     print('Студент %s удалён из списка' % n)
